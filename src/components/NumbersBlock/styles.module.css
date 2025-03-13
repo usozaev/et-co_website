@@ -1,0 +1,268 @@
+/* 1025 - 2560 */
+
+.title {
+    color: #002f6d;
+    text-align: center;
+
+    /* Desktop/H2 */
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    /* 60px */
+}
+
+.cards {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    margin: 0 -0.277777777777778vw 4.166666666666667vw;
+}
+
+.left {
+    border-radius: 1.666666666666667vw;
+    flex: 0 0 calc(50% - 0.555555555555556vw);
+    margin: 0 0.277777777777778vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.left > img {
+    display: block;
+    height: 100% !important;
+    object-fit: cover;
+    width: 100% !important;
+}
+
+.right {
+    flex: 0 0 calc(50% - 0.555555555555556vw);
+    margin: 0 0.277777777777778vw;
+}
+
+.list {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: -0.277777777777778vw;
+}
+
+.item {
+    width: 400px;
+    height: 400px;
+    aspect-ratio: 1 / 1;
+    border-radius: 1.666666666666667vw;
+    box-sizing: border-box;
+    flex: 0 0 calc(50% - 0.555555555555556vw);
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0.277777777777778vw;
+    padding: 1.377777777777778vw;
+    background: linear-gradient(
+        -60deg,
+        var(--mantine-color-blue-4) 0%,
+        #002f6d 100%
+    );
+}
+
+.item:nth-child(1) {
+    background-color: #002f6d;
+    color: #fff;
+}
+
+.item:nth-child(2),
+.item:nth-child(3) {
+    background-color: #fff;
+    color: #002f6d;
+    border: 6px solid #002f6d;
+}
+
+.item:nth-child(4) {
+    background-color: #002f6d;
+    color: white;
+}
+
+.itemBack {
+    width: 400px;
+    height: 400px;
+    aspect-ratio: 1 / 1;
+    border-radius: 1.666666666666667vw;
+    box-sizing: border-box;
+    flex: 0 0 calc(50% - 0.555555555555556vw);
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0.277777777777778vw;
+
+    background-color: #fff;
+    color: #002f6d;
+}
+
+.icon {
+    aspect-ratio: 1 / 1;
+    width: 64px;
+    height: 30px;
+}
+
+.icon > img {
+    aspect-ratio: 1 / 1;
+    display: block;
+    height: auto !important;
+    width: 100% !important;
+}
+
+.label {
+    color: var(--black-3);
+}
+
+.item:nth-child(4) .label {
+    color: rgba(255, 255, 255, 0.56);
+}
+
+.number {
+    font-size: 6.111111111111111vw;
+    line-height: 90%;
+    margin-top: 0.555555555555556vw;
+}
+
+@media (min-width: 2400px) and (max-width: 3840px) {
+    .item {
+        width: 600px;
+        height: 600px;
+        padding-bottom: 20px;
+    }
+
+    .itemBack {
+        width: 600px;
+        height: 600px;
+    }
+}
+
+@media (max-width: 1680px) {
+    .item {
+        width: 250px;
+        height: 250px;
+        padding-bottom: 20px;
+    }
+
+    .itemBack {
+        width: 250px;
+        height: 250px;
+    }
+
+    .number {
+        font-size: 4vw;
+        line-height: 80%;
+    }
+}
+
+/* 768 - 1024 */
+@media (max-width: 1024px) {
+    .join {
+        padding: 80px 0;
+    }
+
+    .cards {
+        margin: 0 -4px 56px;
+    }
+
+    .left {
+        border-radius: 20px;
+        flex: 0 0 calc(50% - 8px);
+        margin: 0 4px;
+    }
+
+    .right {
+        flex: 0 0 calc(50% - 8px);
+        margin: 0 4px;
+    }
+
+    .list {
+        margin: -4px;
+    }
+
+    .item {
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+        flex: 0 0 calc(50% - 8px);
+        margin: 4px;
+        padding: 24px;
+    }
+
+    .itemBack {
+        width: 200px;
+        height: 200px;
+    }
+
+    .icon {
+        width: 24px;
+    }
+
+    .number {
+        font-size: 48px;
+        margin-top: 4px;
+    }
+}
+
+/* 0 - 767 */
+@media (max-width: 767.98px) {
+    .join {
+        padding: 60px 0;
+    }
+
+    .cards {
+        display: block;
+        margin: 0 0 52px;
+    }
+
+    .left {
+        border-radius: 16px;
+        margin: 0 0 10px;
+    }
+
+    .right {
+        margin: 0 auto;
+    }
+
+    .list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: -5px;
+        margin-top: 20px;
+    }
+
+    .item {
+        width: 140px;
+        height: 140px;
+        border-radius: 16px;
+        flex: 0 0 calc(50% - 10px);
+        margin: 5px;
+        padding: 18px;
+    }
+
+    .itemBack {
+        width: 140px;
+        height: 140px;
+        border-radius: 16px;
+        flex: 0 0 calc(50% - 10px);
+        margin: 5px;
+        padding: 18px;
+    }
+
+    .icon {
+        width: 12px;
+    }
+
+    .number {
+        font-size: 26px;
+    }
+
+    .title {
+        font-size: 30px;
+    }
+}

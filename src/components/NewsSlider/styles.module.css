@@ -1,0 +1,124 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    /* border: 1px solid red; */
+    margin: 0;
+    background-color: gray;
+}
+
+.title {
+    color: #002f6d;
+    text-align: center;
+
+    /* Desktop/H2 */
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    /* 60px */
+
+    @media (max-width: 640px) {
+        font-size: 24px;
+    }
+
+    @media (max-width: 350px) {
+        text-align: left;
+    }
+}
+
+.description {
+    text-align: center;
+    color: #002f6d;
+
+    @media (max-width: 350px) {
+        text-align: left;
+    }
+}
+
+.slideActiveClass {
+    width: 760px;
+    border: 1px solid red;
+}
+
+.swiper {
+    .swiper-slide-active {
+        width: 760px;
+        border: 1px solid red;
+    }
+    .swiperButtonNext,
+    .swiperButtonPrev {
+        background-color: #002f6d;
+        /* Example: Change the background color */
+        color: white;
+        /* Example: Change the arrow color */
+        border-radius: 50%;
+        /* Example: Make the buttons circular */
+        width: 40px;
+        /* Adjust the width as needed */
+        height: 40px;
+        /* Adjust the height as needed */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .swiperButtonNext::after,
+    .swiperButtonPrev::after {
+        font-size: 20px;
+        /* Adjust the size of the arrow icons */
+    }
+
+    .bulletActive {
+        width: 141px;
+        height: 20px;
+        border-radius: 20px;
+        background: rgb(35, 60, 145);
+    }
+
+    .paginationBullet {
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        font-size: 12px;
+        color: #000;
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.2);
+    }
+}
+
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.swiper-pagination-bullet-active {
+    color: #fff;
+    background: #233c91 !important;
+}
+
+.swiperBullet {
+    background-color: #233c91;
+    opacity: 0.7;
+    width: 16px;
+    height: 16px;
+}
+
+/* '--swiper-pagination-color': '#233C91',
+                    '--swiper-pagination-bullet-inactive-color': '#999999',
+                    '--swiper-pagination-bullet-inactive-opacity': '0.7',
+                    '--swiper-pagination-bullet-size': '16px',
+                    '--swiper-pagination-bullet-horizontal-gap': '6px', */

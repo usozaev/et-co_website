@@ -1,0 +1,25 @@
+.swiperButtonPrev,
+.swiperButtonNext {
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.swiperButtonPrev {
+    background-image: url('images/arrow-left.png');
+    /* 이미지가 나오지않을 때, ./img/arrow-left.png로 */
+    background-size: contain;
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+    left: 69px;
+}
+.swiperButtonNext {
+    background-image: url('images/arrow-right.png');
+    /* 이미지가 나오지않을 때, ./img/arrow-left.png로 */
+    background-size: contain;
+    background-position: 50% 60%;
+    background-repeat: no-repeat;
+    right: 69px;
+}

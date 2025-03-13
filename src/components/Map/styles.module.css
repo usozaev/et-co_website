@@ -1,0 +1,7 @@
+.polygon {
+    fill: 'red';
+}
+
+#PER:hover {
+    fill: '#fff';
+}  

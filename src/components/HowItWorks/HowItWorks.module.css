@@ -1,0 +1,234 @@
+/* 1025 - 2560 */
+.howitworks {
+  padding: 6.944444444444444vw 0;
+  position: relative;
+}
+
+.content {
+  height: 400dvh;
+  padding-right: 100px;
+  padding: 40px 100px 20px;
+}
+
+.content>nav {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  height: 6.166666666666667vw;
+  margin: 0 -0.277777777777778vw calc(100dvh - 12.666666666666667vw - 12.166666666666667vw);
+  position: sticky;
+  top: 1vw;
+}
+
+.content>nav>a {
+  background-color: gray;
+  border-radius: 1.111111111111111vw;
+  cursor: pointer;
+  flex: 0 0 calc(20% - 0.555555555555556vw);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.277777777777778vw;
+  transition: background-color var(--move-speed) ease,
+    color var(--move-speed) ease;
+}
+
+.content>nav>a.selected {
+  background-color: var(--black-text);
+  color: white;
+}
+
+.icon {
+  flex: 0 0 auto;
+  height: 1.666666666666667vw;
+  margin-right: 0.555555555555556vw;
+}
+
+.icon>img {
+  display: block;
+  height: 100% !important;
+  width: auto !important;
+}
+
+.sticky {
+
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: calc(100vh - (10.666666666666667vw + 10.166666666666667vw + 2.777777777777778vw));
+  margin: calc(10.666666666666667vw + 10.166666666666667vw + 2.777777777777778vw - 100dvh) auto 0;
+  padding-bottom: 2.777777777777778vw;
+  position: sticky;
+  top: 300px;
+}
+
+.texts {
+  flex: 0 1 100%;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: 2.777777777777778vw;
+  position: relative;
+}
+
+.texts>p {
+  font-size: 1.388888888888889vw;
+  line-height: 140%;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  transition: opacity var(--move-speed) ease;
+  width: 100%;
+  max-width: 22.5vw;
+  color: #002F6D
+}
+
+.texts>p.selected {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.tablet {
+
+  aspect-ratio: 1440 / 900;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  height: calc(100dvh - (6.666666666666667vw + 6.166666666666667vw + 2.777777777777778vw) - 2.777777777777778vw);
+}
+
+.image {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.image>img {
+  aspect-ratio: 1440 / 900;
+  display: block;
+  height: 100% !important;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--move-speed) ease;
+  width: auto !important;
+}
+
+.image.selected>img {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.contentMobile {
+  display: none;
+}
+
+@media (pointer: fine) {
+  .content>nav>a:not(.selected):hover {
+    background-color: var(--gray-7);
+  }
+}
+
+/* 768 - 1024 */
+@media (max-width: 1024px) {
+  .howitworks {
+    padding: 80px 0;
+    overflow: hidden;
+  }
+
+  .content {
+    display: none;
+  }
+
+  .contentMobile {
+    display: block;
+  }
+
+  .item {
+    margin-top: 80px;
+    text-align: center;
+  }
+
+  .item:first-child {
+    margin-top: 0;
+  }
+
+  .title {
+    background-color: white;
+    border-radius: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    margin-bottom: 24px;
+    padding: 0 20px;
+  }
+
+  .icon {
+    flex: 0 0 auto;
+    height: 24px;
+    margin-right: 8px;
+  }
+
+  .item>p {
+    font-size: 16px;
+    margin: 0 auto 32px;
+    text-align: center;
+    max-width: 600px;
+  }
+
+  .tblt {
+    aspect-ratio: 868 / 542;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 868px;
+  }
+
+  .tblt>img {
+    aspect-ratio: 1440 / 900;
+    display: block;
+    height: auto !important;
+    width: 100% !important;
+  }
+
+  .device {
+    display: none;
+  }
+}
+
+/* 0 - 767 */
+@media (max-width: 767.98px) {
+  .howitworks {
+    padding: 60px 0;
+  }
+
+  .item {
+    margin-top: 52px;
+  }
+
+  .title {
+    height: 52px;
+    padding: 0 16px;
+  }
+
+  .tblt {
+    display: none;
+  }
+
+  .device {
+    aspect-ratio: 410 / 834;
+    display: block;
+    margin: 0 auto;
+    width: 206px;
+  }
+
+  .device>img {
+    aspect-ratio: 410 / 834;
+    display: block;
+    height: auto !important;
+    width: 100% !important;
+  }
+}
