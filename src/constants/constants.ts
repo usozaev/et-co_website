@@ -9,8 +9,58 @@ import ura from '../images/ura.webp'
 import vettaNewsImg from '../images/vettaNews.png'
 import vsluh from '../images/vsluh.jpeg'
 import vsluh2 from '../images/vsluh2.jpeg'
+import vebMeet from '../images/VEB_meet.jpeg' 
+import arkhangelsk_v1 from '../images/arhangelsk.webp'
 
 export const NEWS_DATA = [
+    {
+        linkProps: {
+        href: 'https://dvinanews.ru/news/detail/25022',
+        target: '_blank',
+        rel: 'noopener noreferrer',
+        },
+        date: '2025-10-03',
+        calendarDate: '3 октября 2025',
+        image:'https://dvinanews.ru/upload/resize_cache/iblock/f30/800_800_1/48zp5re8wp0yyqf3iedw6upwumdnr3pf.jpg',
+        title: 'На возведение кампуса «Арктическая звезда» Архангельская область привлекает внебюджетное финансирование',
+        description: `Между правительством Архангельской области, ООО «Эталонные концессии» – управляющей организацией ООО «Арктическая звезда» и ВЭБ.РФ подписано соглашение о привлечении внебюджетного финансирования на строительство в Архангельске кампуса мирового уровня «Арктическая звезда».`,
+    },
+    {            
+        linkProps: {
+            href: 'https://www.interfax-russia.ru/northwest/news/glavgosekspertiza-odobrila-proekt-kampusa-arkticheskaya-zvezda-v-arhangelske',
+            target: '_blank',
+            rel: 'noopener noreferrer',
+        },
+        date: '2025-07-02',
+        calendarDate: '2 июля 2025',
+        image: arkhangelsk_v1,
+        title: 'Главгосэкспертиза одобрила проект кампуса "Арктическая звезда" в Архангельске',
+        description: ` Главгосэкспертиза РФ выдала положительное заключение на строительство комплекса зданий и сопутствующей инфраструктуры в составе кампуса "Арктическая звезда" в Архангельске, сообщает пресс-служба ведомства.`,
+    },
+    {
+        linkProps: {
+            href: 'https://ria.ru/  20250410/vebrf-2010575631.html',
+            target: '_blank',
+            rel: 'noopener noreferrer',
+        },
+        date: '2025-04-10',
+        calendarDate: '10 апреля 2025',
+        image: vebMeet,
+        title: 'ВЭБ.РФ профинансирует создание кампуса "Арктическая звезда" в Архангельске',
+        description: `ВЭБ.РФ предоставит ООО "Арктическая звезда" кредит на 8 миллиардов рублей в рамках концессионного соглашения по созданию межвузовского кампуса мирового уровня в Архангельске, сообщает корпорация развития.`,
+    },
+    {
+        linkProps: {
+            href: 'https://ria.ru/20250303/arkhangelsk-2002690706.html',
+            target: '_blank',
+            rel: 'noopener noreferrer',
+        },
+        date: '2025-03-03',
+        calendarDate: '3 марта 2025',
+        image: 'https://cdnn21.img.ria.ru/images/156275/99/1562759940_155:0:3796:2048_1280x0_80_0_0_d09e01b30a7a5392a51ea7d31eed5aae.jpg.webp',
+        title: 'Археологические изыскания проведут на месте будущего кампуса в Архангельске',
+        description: `«Губернатор Архангельской области Александр Цыбульский и вице-премьер России Дмитрий Чернышенко посетили площадку под строительство кампуса мирового уровня в Архангельске, которая расположена на бывшей торговой площади города`,
+    },
     {
         linkProps: {
             href: 'https://nashgorod.ru/news/2025-02-27/aleksandr-moor-mezhuniversitetskiy-kampusa-dolzhen-stat-brendom-tyumenskoy-oblasti-5336002',

@@ -31,11 +31,11 @@ import tumenTitleImage from '../../images/tumen1.webp'
 import tumen2 from '../../images/tumen2.webp'
 import tumen3 from '../../images/tumen3.webp'
 import tumen4 from '../../images/tumen4.webp'
-import ufaTitleImage from '../../images/ufa1.webp'
-import ufa2 from '../../images/ufa2.webp'
-import ufa3 from '../../images/ufa3.webp'
-import ufa4 from '../../images/ufa4.webp'
-import ufa5 from '../../images/ufa5.webp'
+// import ufaTitleImage from '../../images/ufa1.webp'
+// import ufa2 from '../../images/ufa2.webp'
+// import ufa3 from '../../images/ufa3.webp'
+// import ufa4 from '../../images/ufa4.webp'
+// import ufa5 from '../../images/ufa5.webp'
 
 // Import Swiper styles
 import 'swiper/css'
@@ -49,7 +49,7 @@ interface IProjectsGalleryProps {
 
 export enum ProjectsGalleryType {
     Perm,
-    Ufa,
+    //Ufa,
     Tumen,
     Arhangelsk,
     Shibai,
@@ -62,11 +62,11 @@ const projectsNavBarData = [
         title: 'Кампус Пермь',
         image: permTitleImage,
     },
-    {
-        type: ProjectsGalleryType.Ufa,
-        title: 'Кампус Уфа',
-        image: ufaTitleImage,
-    },
+    // {
+    //     type: ProjectsGalleryType.Ufa,
+    //     title: 'Кампус Уфа',
+    //     image: ufaTitleImage,
+    // },
     {
         type: ProjectsGalleryType.Tumen,
         title: 'Кампус Тюмень',
@@ -127,33 +127,33 @@ export const ProjectsGallery = ({
                         icon: <СlockIcon />,
                     },
                 ]
-            case ProjectsGalleryType.Ufa:
-                return [
-                    {
-                        num: '145',
-                        letters: 'тыс. м2',
-                        bullet1: 'Площадь объекта',
-                        icon: <SquareIcon />,
-                    },
-                    {
-                        num: '4133',
-                        letters: 'человека',
-                        bullet1: 'Вместимость',
-                        icon: <PeopleIcon />,
-                    },
-                    {
-                        num: '27',
-                        letters: 'млрд руб.',
-                        bullet1: 'Объем инвестиций  ',
-                        icon: <MoneyIcon />,
-                    },
-                    {
-                        num: '25',
-                        letters: 'лет',
-                        bullet1: 'Срок реализации',
-                        icon: <СlockIcon />,
-                    },
-                ]
+            // case ProjectsGalleryType.Ufa:
+            //     return [
+            //         {
+            //             num: '145',
+            //             letters: 'тыс. м2',
+            //             bullet1: 'Площадь объекта',
+            //             icon: <SquareIcon />,
+            //         },
+            //         {
+            //             num: '4133',
+            //             letters: 'человека',
+            //             bullet1: 'Вместимость',
+            //             icon: <PeopleIcon />,
+            //         },
+            //         {
+            //             num: '27',
+            //             letters: 'млрд руб.',
+            //             bullet1: 'Объем инвестиций  ',
+            //             icon: <MoneyIcon />,
+            //         },
+            //         {
+            //             num: '25',
+            //             letters: 'лет',
+            //             bullet1: 'Срок реализации',
+            //             icon: <СlockIcon />,
+            //         },
+            //     ]
             case ProjectsGalleryType.Tumen:
                 return [
                     {
@@ -274,7 +274,7 @@ export const ProjectsGallery = ({
             perm5,
             permTitleImage,
         ],
-        [ProjectsGalleryType.Ufa]: [ufa2, ufa3, ufa4, ufa5, ufaTitleImage],
+        //[ProjectsGalleryType.Ufa]: [ufa2, ufa3, ufa4, ufa5, ufaTitleImage],
         [ProjectsGalleryType.Tumen]: [tumen2, tumen3, tumen4, tumenTitleImage],
         [ProjectsGalleryType.Arhangelsk]: [
             arhangelskImage,

@@ -2,7 +2,7 @@ import { Flex, HoverCard, Image, Text, Title } from '@mantine/core'
 import Map from '../../images/mapNew.svg'
 import { useDisclosure, useInViewport } from '@mantine/hooks'
 import perm from '../../images/perm1.webp'
-import ufa from '../../images/ufa1.webp'
+//import ufa from '../../images/ufa1.webp'
 import arkhangelsk from '../../images/arhangelsk.webp'
 import tumen from '../../images/tumen1.webp'
 import styles from './styles.module.css'
@@ -12,7 +12,7 @@ import { SkyrimLeft, SkyrimRight } from '../../images/icons/skyrim-icon'
 
 enum ProjectsGalleryType {
     Perm,
-    Ufa,
+    //Ufa,
     Tumen,
     Arhangelsk,
 }
@@ -25,13 +25,13 @@ const initialNumbers = [
         label: 'ПЕРМЬ',
         text: 'инвестиций',
     },
-    {
-        id: 'ufa',
-        num: '20+',
-        sign: 'тыс.',
-        label: 'УФА',
-        text: 'мест проживания',
-    },
+    // {
+    //     id: 'ufa',
+    //     num: '20+',
+    //     sign: 'тыс.',
+    //     label: 'УФА',
+    //     text: 'мест проживания',
+    // },
     {
         id: 'arkhangelsk',
         num: '300+',
@@ -70,13 +70,13 @@ const popoverData = [
         text: 'Кампус Тюмень',
         type: ProjectsGalleryType.Tumen,
     },
-    {
-        id: '4',
-        coordinates: { top: '78%', left: '26%' },
-        img: ufa,
-        text: 'Кампус Уфа',
-        type: ProjectsGalleryType.Ufa,
-    },
+    // {
+    //     id: '4',
+    //     coordinates: { top: '78%', left: '26%' },
+    //     img: ufa,
+    //     text: 'Кампус Уфа',
+    //     type: ProjectsGalleryType.Ufa,
+    // },
 ]
 
 interface IRussianMapProps {
