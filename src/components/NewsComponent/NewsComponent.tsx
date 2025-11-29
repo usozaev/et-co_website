@@ -170,24 +170,31 @@ export const NewsComponent = () => {
                                     }
                                 >
                                     <Flex
-                                        gap={'24px'}
-                                        w={'100%'}
-                                        h={'100%'}
+                                        gap={{ base: 16, md: 24 }}
+                                        w="100%"
+                                        direction={{ base: 'column', md: 'row' }}
+                                        align={{ base: 'center', md: 'flex-start' }}
                                         style={{
                                             textWrap: 'balance',
-                                            textAlign: 'justify',
                                             cursor: 'pointer',
                                         }}
                                     >
-                                        <Image
-                                            style={{
-                                                scale: 0.1,
-                                                width: '30%',
-                                                height: '100%',
-                                            }}
-                                            src={item.image}
-                                        />
-                                        <Markdown>{item.description}</Markdown>
+                                        {item.image && (
+                                            <Image
+                                                src={item.image}
+                                                w={{ base: '100%', md: '30%' }}
+                                                mah={200}
+                                                fit="cover"
+                                                radius="md"
+                                            />
+                                        )}
+                                        <div style={{ 
+                                            textAlign: 'left', 
+                                            lineHeight: 1.6,
+                                            width: '100%'
+                                        }}>
+                                            <Markdown>{item.description}</Markdown>
+                                        </div>
                                     </Flex>
                                 </Accordion.Panel>
                             </Accordion.Item>
